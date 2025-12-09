@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electric Bill Calculator Results</title>
+  <style>
+    .results {
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat p {
+      font-size: 1rem;
+    }
+
+    .stat-amount {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #3498db;
+    }
+
+    .filter {
+      margin-bottom: 20px;
+    }
+
+    input#month-filter {
+      padding: 10px;
+      width: 100%;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button.clear-filter {
+      background-color: #e74c3c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button.clear-filter:hover {
+      background-color: #c0392b;
+    }
+
+    button.new-bill-button {
+      background-color: #1abc9c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button.new-bill-button:hover {
+      background-color: #16a085;
+    }
+  </style>
+</head>
+<body>
+  <section class="results">
+    <h1>Electric Bill Calculator</h1>
+    <div class="stats">
+      <div class="stat">
+        <p>Total Cost</p>
+        <div class="stat-amount">$198.00</div>
+      </div>
+      <div class="stat">
+        <p>Highest Bill</p>
+        <div class="stat-amount">$81.60</div>
+      </div>
+      <div class="stat">
+        <p>Average Bill</p>
+        <div class="stat-amount">$66.00</div>
+      </div>
+    </div>
+
+    <div class="filter">
+      <label for="month-filter">Filter by Month</label>
+      <input type="text" id="month-filter" placeholder="e.g., October 2024">
+      <button class="clear-filter">Clear Filter</button>
+    </div>
+
+    <div class="bill-details">
+      <h3>October 2024</h3>
+      <p>Consumption: 450.00 kWh</p>
+      <p>Rate: $0.120/kWh</p>
+      <p>Total: $54.00</p>
+    </div>
+
+    <button class="new-bill-button">Calculate New Bill</button>
+  </section>
+</body>
+</html>
