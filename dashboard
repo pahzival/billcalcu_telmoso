@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Electric Bill Calculator</title>
+
+    <style>
+        .dashboard-container {
+            font-family: 'Arial', sans-serif;
+            padding: 2rem;
+            background-color: #f0f0f0;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 0.5rem;
+        }
+
+        header h1 {
+            margin-bottom: 1rem;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 0;
+        }
+
+        header nav ul li {
+            list-style: none;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        header nav ul li a:hover {
+            color: white;
+            background-color: #5ed6b2;
+        }
+
+        .cards-container {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 240px;
+            text-align: center;
+        }
+
+        .card h2 {
+            font-size: 18px;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            font-size: 14px;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+
+        .btn-action {
+            background-color: #5ed6b2;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-action:hover {
+            background-color: #4abba5;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .cards-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>Electric Bill Calculator</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Calculator</a></li>
+                    <li><a href="#">Results</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="cards-container">
+            <div class="card">
+                <h2>Calculator</h2>
+                <p>Calculate your electric bill instantly</p>
+                <button class="btn-action">Open Calculator</button>
+            </div>
+
+            <div class="card">
+                <h2>Results History</h2>
+                <p>View all your saved calculations</p>
+                <button class="btn-action">View Results</button>
+            </div>
+
+            <div class="card">
+                <h2>Profile</h2>
+                <p>Manage your account settings</p>
+                <button class="btn-action">Edit Profile</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
