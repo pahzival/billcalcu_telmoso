@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electric Bill Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px;
+    }
+
+    .calculator {
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .bill-amount {
+      font-size: 3rem;
+      color: #3498db;
+    }
+
+    .input-container {
+      margin-top: 20px;
+    }
+
+    label {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button.calculate-button {
+      background-color: #1abc9c;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button.calculate-button:hover {
+      background-color: #16a085;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Calculator</a></li>
+        <li><a href="#">Results</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="calculator">
+    <h1>Electric Bill Calculator</h1>
+    <p>Calculate your monthly electricity costs.</p>
+    <div class="calculator-container">
+      <p>Total Electric Bill</p>
+      <div class="bill-amount">$6750.00</div>
+      
+      <div class="input-container">
+        <label for="month">Month:</label>
+        <input type="text" id="month" value="December 2023" disabled>
+        
+        <label for="consumption">Consumption:</label>
+        <input type="number" id="consumption" value="450 kWh" disabled>
+        
+        <label for="rate">Rate:</label>
+        <input type="text" id="rate" value="$0.15/kWh" disabled>
+        
+        <div class="calculation">
+          <p>Calculation:</p>
+          <p>450 * $0.15 = $6750.00</p>
+        </div>
+      </div>
+
+      <button class="calculate-button">Calculate Bill</button>
+    </div>
+  </section>
+</body>
+</html>
