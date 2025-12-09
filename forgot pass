@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password | Electric Bill Calculator</title>
+
+    <style>
+        /* Global Styles */
+        body {
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .forgot-password-container {
+            max-width: 400px;
+            margin: 100px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header .logo img {
+            height: 40px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+
+        .forgot-password-form h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .forgot-password-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #40e0d0;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #30b8b3;
+        }
+
+        .login-prompt {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .login-prompt a {
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .forgot-password-container {
+                margin: 40px 20px;
+                padding: 20px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="forgot-password-container">
+
+        <header class="header">
+            <div class="logo">
+                <img src="logo.png" alt="Electric Bill Calculator Logo">
+            </div>
+        </header>
+
+        <section class="forgot-password-form">
+            <h2>Forgot Password</h2>
+            <form action="#">
+                <input type="password" placeholder="New Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit">Change Password</button>
+            </form>
+
+            <div class="login-prompt">
+                Already have an account? <a href="#">Log In</a>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
