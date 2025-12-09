@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Bill Calculator - Landing</title>
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2d3b55;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        .auth-buttons button {
+            margin-left: 10px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .login-btn {
+            background-color: white;
+            color: #2d3b55;
+        }
+
+        .register-btn {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Landing Page Styles */
+        .main-content {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .cta-buttons button {
+            margin: 10px;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .get-started-btn {
+            background-color: #40e0d0;
+            color: white;
+        }
+
+        .signup-btn {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+            .header {
+                flex-direction: column;
+            }
+            .auth-buttons {
+                margin-top: 10px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="logo.png" alt="Electric Bill Calculator Logo">
+            </div>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="register-btn">Register</button>
+            </div>
+        </header>
+        
+        <section class="main-content">
+            <h1>Calculate Your Electric Bill with Ease</h1>
+            <p>Track your electricity consumption, calculate costs, and monitor your usage history all in one place.</p>
+
+            <div class="cta-buttons">
+                <button class="get-started-btn">Get Started</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
