@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator - Electric Bill Calculator</title>
+    <style>
+        .calculator-container {
+            font-family: 'Arial', sans-serif;
+            padding: 2rem;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .calculator-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #dcdcdc;
+            border-radius: 5px;
+            width: 60%;
+        }
+
+        button {
+            background-color: #5ed6b2;
+            padding: 12px;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #4abba5;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator-container">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>Electric Bill Calculator</h1>
+            <p>Calculate your monthly electricity costs.</p>
+        </header>
+        <form action="#" method="POST">
+            <input type="text" id="month" name="month" placeholder="e.g., November 2024">
+            <input type="number" id="power-consumption" name="power-consumption" placeholder="e.g., 450">
+            <input type="number" id="cost-per-kWh" name="cost-per-kWh" placeholder="e.g., 0.12">
+            <button type="submit" class="btn-action">Calculate Bill</button>
+        </form>
+    </div>
+</body>
+</html>
