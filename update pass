@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Bill Calculator - Profile Settings</title>
+    <style>
+        /* Reset some basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #00796b;
+        }
+
+        /* Profile Settings Container */
+        .profile-settings {
+            margin: 50px auto;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .settings-container h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .security-section h3 {
+            font-size: 20px;
+            color: #00796b;
+            margin-bottom: 10px;
+        }
+
+        /* Input Fields */
+        label {
+            font-size: 14px;
+            color: #555;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            background-color: #f9f9f9;
+        }
+
+        /* Buttons */
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .update-btn,
+        .cancel-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 48%;
+        }
+
+        .update-btn {
+            background-color: #00796b;
+            color: white;
+        }
+
+        .update-btn:hover {
+            background-color: #004d40;
+        }
+
+        .cancel-btn {
+            background-color: #ccc;
+            color: white;
+        }
+
+        .cancel-btn:hover {
+            background-color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Electric Bill Calculator">
+        </div>
+        <nav class="nav-links">
+            <a href="#">Dashboard</a>
+            <a href="#">Calculator</a>
+            <a href="#">Results</a>
+            <a href="#">Profile</a>
+            <a href="#">Logout</a>
+        </nav>
+    </header>
+
+    <main class="profile-settings">
+        <section class="settings-container">
+            <h2>Profile Settings</h2>
+            <div class="security-section">
+                <h3>Security</h3>
+                <form action="#" method="POST">
+                    <label for="current-password">Current Password</label>
+                    <input type="password" id="current-password" name="current-password" required>
+
+                    <label for="new-password">New Password</label>
+                    <input type="password" id="new-password" name="new-password" required>
+
+                    <label for="confirm-password">Confirm New Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+
+                    <div class="buttons">
+                        <button type="submit" class="update-btn">Update Password</button>
+                        <button type="button" class="cancel-btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
